@@ -1,0 +1,65 @@
+.UpperArea {
+    background-color: #77431d;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.Left-NavHeaders {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.Slogan {
+    color: goldenrod;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 24px;
+}
+
+.NavLinks {
+    display: flex;
+    align-items: center;
+    font-family: "Jockey One", sans-serif;
+    color: goldenrod;
+    font-size: 3vw;
+    top: 1.85vw;
+    right: 14%;
+}
+
+.NavLinks a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 20px;
+}
+
+.NavLinks a:visited {
+    color: inherit;
+}
+
+.NavLinks a:hover {
+    text-decoration: underline;
+}
+
+.LogoutButton {
+    background-color: goldenrod;
+    color: #77431d;
+    border: none;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: "Jockey One", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.LogoutButton:hover {
+    background-color: #ffdf80;
+}

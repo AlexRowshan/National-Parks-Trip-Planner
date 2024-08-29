@@ -1,0 +1,67 @@
+.tags-input-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tags-input-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Let the input grow to fill available space */
+    margin-right: 8px; /* Add margin between input and button */
+}
+
+.tag-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.text {
+    margin-right: 4px;
+}
+
+.close {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tags-input {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    flex-grow: 1;
+}
+
+.add-user-button {
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    font-size: 2vw;
+    width: auto;
+    height: auto;
+    background-color: rgb(38,65,22);
+    border: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .tags-input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tags-input,
+    .add-user-button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}

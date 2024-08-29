@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Mulish&display=swap');
+
+.Left-NavHeaders{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+    height: 15vh;
+}
+
+.Logo {
+    width: 23%;
+    height: auto;
+}
+
+.Slogan {
+    color: goldenrod;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 3vw;
+}
+
+.SearchTypeLabel {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2vw;
+    color: goldenrod;
+    margin-right: 2%;
+}
+
+.SearchBarArea1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10vh;
+
+    /*margin-left: 20%;*/
+}
+
+.SearchBox{
+    position: relative;
+    width: 50%;
+    height: 5vh;
+}
+
+.search-box {
+    width: 96%;
+    height: 100%;
+    padding-left: 5%;
+    border: 1px solid black;
+    font-size: 1.2vw;
+    border-radius: 20px;
+}
+
+.search-button {
+    position: absolute;
+    top: 25%;
+    right: 1.5%;
+    width: 6%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.CenterColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: 85%;
+}
+
+/*Want a cream colored container for all the names of the parks. Green text for the titles.*/
+.centered-container-parks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70%;
+    background-color: lightyellow;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.park-card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.park-image {
+    width: 30%;
+    height: auto;
+}
+
+.show-more-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for smaller size */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Adjust font size */
+    margin-top: 20px; /* Adjust margin */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.show-more-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.button_plus {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #095776;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.button_plus:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #095776;
+    top: 50%;
+    left: 50%;
+}
+
+.button_plus:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #095776;
+    height: 50%;
+    width: 4px;
+}
+
+.button_plus:hover:before,
+.button_plus:hover:after {
+    background: #fff;
+    transition: 0.2s;
+}
+
+.button_plus:hover {
+    background-color: #095776;
+    transition: 0.2s;
+}
+
+.park-group {
+    width: 90%;
+}
+
+.park-favs {
+    width: 90%;
+}
+.button_minus {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #095776;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    font-size: 28px; /* Increase font size */
+    line-height: 30px; /* Adjust line-height */
+    text-align: center;
+    color: #095776;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.button_minus:hover {
+    background-color: #095776;
+    color: #fff;
+    transition: 0.2s;
+}

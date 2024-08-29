@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Mulish&display=swap');
+
+.tags-input-container{
+    /*border: 5px solid #ffffff;*/
+    padding: .5em;
+    /*border-radius: 3px;*/
+    width: min(80vw, 600px);
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+    /*color: white;*/
+}
+
+.tag-item{
+    background-color: rgb(218, 216, 216);
+    display: inline-block;
+    padding: .5em .75em;
+    border-radius: 20px;
+}
+.tag-item .close{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5em;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tags-input{
+    flex-grow: 1;
+    padding: .5em 0;
+    border: none;
+    outline: none;
+}
+
+.page-title-compare{
+    color: goldenrod;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.CompareResultsArea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70%;
+    background-color: lightyellow;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.compare-button{
+    font-family: "Jockey One", sans-serif;
+    color: goldenrod;
+    font-size: 2vw;
+    border-radius: 15px;
+    width: 25%;
+    height: auto;
+    background-color: #77431d;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    right:50%;
+}
+
+.compare-search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
